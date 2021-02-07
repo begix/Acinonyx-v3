@@ -200,10 +200,13 @@ async def on_guild_join(server):
 	# Let's message hello in the main chat - then pm the owner
 	prefixes = await get_prefix(bot,None)
 	prefix = prefixes[0] if len(prefixes) else "$"
-	msg = 'Hallo! Terima kasih sudah mengizinkan ku untuk bergabung dengan server mu! ({})\n\nJangan sungkan untuk menggunakan ku dalam server mu.\n\nKamu dapat melihat command ku dengan mengetik `{}help` dalam chat server atau DM.\n\n'.format(server.name, prefix)
-	msg += 'Jika kamu memiliki waktu luang, aku mungkin bisa membantu mu untuk menyeting server mu dengan mengetik `{}setup` dalam chat server. Terima Kasih!'.format(settings_dict.get("prefix","$"))
+        msg = '<:indonesia:798977282886467635> **INDONESIA**\n'
+        msg += 'Halo nama ku Acinonyx, sebelum' 
+	# msg = 'Hallo! Terima kasih sudah mengizinkan ku untuk bergabung dengan server mu! ({})\n\nJangan sungkan untuk menggunakan ku dalam server mu.\n\nKamu dapat melihat command ku dengan mengetik `{}help` dalam chat server atau DM.\n\n'.format(server.name, prefix)
+	# msg += 'Jika kamu memiliki waktu luang, aku mungkin bisa membantu mu untuk menyeting server mu dengan mengetik `{}setup` dalam chat server. Terima Kasih!'.format(settings_dict.get("prefix","$"))
 	try:
-		await owner.send(msg)
+                pass
+		# await owner.send(msg)
 	except Exception:
 		pass
 
